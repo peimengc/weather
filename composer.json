@@ -1,0 +1,30 @@
+{
+    "name": "peimengc/weather",
+    "description": "A weather SDK.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "peimengc",
+            "email": "931692760@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Peimengc\\Weather\\": "src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Peimengc\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
